@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+}
+.container{
+    display: flex;
+}
+.infoContainer{
+    /* background-color: rgb(189, 237, 180); */
+    width: 60vw;
+    height: 70vh;
+    margin: 76px 253px;
+    display: flex;
+    justify-content: space-around;
+}
+.divInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hello{
+    font-size: 40px;
+    font-family: 'Merriweather', serif;
+}
+.name{
+    font-size: 45px;
+    font-weight: bold;
+}
+.about{
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+}
+.moreAbout{
+    font-size: 22px;
+    margin: 15px;
+}
+.buttons button{
+    margin-top: 22px;
+    padding: 9px;
+    font-weight: bold;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 0px 40px;
+    color: rgb(0, 0, 0);
+    /* background-color: pink; */
+    cursor: pointer;
+}
+.buttons button:hover{
+    color: rgb(2, 2, 2);
+    background-color: rgb(31, 207, 184);
+}
+
+
+.devPic img{
+    height: 193px;
+    height: 25vh;
+}
+
+
+
+/* CSS for contact.html file(you can do saperate css file also) */
+
+.contactform{
+    padding: 0px;
+    padding-top: 2px;
+    font-family: 'Roboto Slab', serif;
+    /* text-align: left; */
+
+}
+.contactform h1{
+    /* font-family: 'Roboto Slab', serif; */
+    text-align: justify;
+    padding: 1px;
+    
+}
+.contactform form div{
+    padding: 9px 0;
+    /* text-align: left; */
+    margin: 0 4px;
+    display: flex;
+    flex-direction: column;
+}
+#emailHelp{
+    font-size: 14px;
+    color: lightcoral;
+    margin: 0 1px;
+}
+.btn-sm{
+    margin: 0px 14px;
+    border-radius: 15px;
+    color:#1c05cb;
+    cursor: pointer;
+    background-color: rgb(156, 244, 236);
+    
+    
+}
+.btn-sm:hover{
+    color: rgb(2, 2, 2);
+    background-color: rgb(195, 183, 223);
+}
+
+
+/* CSS for blog.html file(you can do saperate css file also) */
+
+.blogContainer {
+    margin: 10px;
+}
+
+
+
+
+
+  /* -------------------------------- 
+
+css-sidebar
+
+-------------------------------- */
+
+* {
+    margin:0;
+    padding:0;
+  }
+  
+  body {
+    background:#e1e1e1;
+  }
+  
+  .header {
+    background:#fff;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+    padding: 15px 20px;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9;
+  }
+  
+  button {
+    background:transparent;
+    border:none;
+    width:30px;
+    height:30px;
+    cursor:pointer; 
+    outline:0;
+  }
+  
+  .toggle span {
+    width:100%;
+    height:3px;
+    background:#555;
+    display:block;
+    position:relative;
+    cursor:pointer;
+  }
+  
+  .toggle span:before,
+  .toggle span:after {
+    content:'';
+    position:absolute;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#555;
+    transition: all 0.3s ease-out;
+  }
+  
+  .toggle span:before {
+    top:-8px;
+  }
+  
+  .toggle span:after {
+    top:8px;
+  }
+  
+  .toggle span.toggle {
+    background:transparent;
+  }
+  
+  .toggle span.toggle:before {
+    top:0;
+    transform:rotate(-45deg);
+    background:#4CAF50;
+    
+  }
+  
+  .toggle span.toggle:after {
+    top:0;
+    transform:rotate(45deg);
+    background:#4CAF50;
+  }
+  
+  .sidebar {
+    background:#fff;
+    width:235px;
+    position:fixed;
+    top:0;
+    left:-235px;
+    height:100%;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    padding-top:90px;
+    transition:all 0.3s ease-out;
+  }
+  
+  .sidebar ul {
+    list-style:none;
+  }
+  
+  .sidebar ul li {
+    display:block;
+  }
+  
+  .sidebar ul li a {
+    padding:8px 15px;
+    font-size:16px;
+    color:#222;
+    font-family:arial;
+    text-decoration:none;
+    display:block;
+    position:relative;
+    z-index:1;
+    transition:all 0.3s ease-out;
+    font-weight:500;
+  }
+  
+  .sidebar ul li a:before {
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:50%;
+    right:50%;
+    transform:translate(-50%,-50%);
+    width:0;
+    height:1px;
+    background:#4CAF50;
+    z-index:-1;
+    transition:all 0.3s ease-out;
+  }
+  
+  .sidebar ul li a:hover:before {
+    width:100%;
+  }
+  
+  .sidebar ul li a:hover {
+    color:#4CAF50;
+  }
+  
+  .sidebarshow {
+    left:0;
+  }
+  
+
+
+  /* -------------------------------- 
+
+css-gradient-borders
+
+-------------------------------- */
+
+.btn-gradient-1 {
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+  }
+  
+  /* method 2 -> use background-clip to support border-radius */
+  .btn-gradient-2 {
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+  }
+  
+  /* demo stuff */
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1rem; */
+    /* padding: 2rem; */
+    /* justify-content: center; */
+    align-items: start;
+    min-height: 100vh;
+
+  }
+  
+  
+  .btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: darkblue;
+    padding: 1.5rem 4rem;
+    cursor: pointer;    
+  }
+  .btn-gradient-2:hover{
+    color: rgb(2, 2, 2);
+    background-color: rgb(67, 44, 121);
+  }
